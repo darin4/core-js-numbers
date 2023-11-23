@@ -34,9 +34,9 @@ console.log (getRectangleArea(width,height));
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
-}
+function getCircleCircumference(radius) {return 2*Math.PI*radius;}
+let radius=6;
+console.log(getCircleCircumference(radius));
 
 /**
  * Returns an average of two given numbers.
@@ -50,9 +50,10 @@ function getCircleCircumference(/* radius */) {
  *  10, 0  => 5
  *  -3, 3  => 0
  */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
-}
+function getAverage(value1, value2) {
+  return ((value1+value2)/2);} 
+  let value1=12; let value2=13;
+  console.log (getAverage(value1,value2));
 
 /**
  * Returns a distance between two points by cartesian coordinates.
