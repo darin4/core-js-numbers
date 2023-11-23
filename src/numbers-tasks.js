@@ -10,17 +10,18 @@
 /**
  * Returns an area of a rectangle given by width and height.
  *
- * @param {number} width
- * @param {number} height
+ * @param {6} width
+ * @param {7} height
  * @return {number}
  *
  * @example:
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
-}
+let width=6;
+let height=7;
+function getRectangleArea(width,height) {let area=width*height; return area;}
+console.log (getRectangleArea(width,height));
 
 /**
  * Returns a circumference of circle given by radius.
