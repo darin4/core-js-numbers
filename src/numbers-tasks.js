@@ -18,10 +18,13 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-let width=6;
-let height=7;
-function getRectangleArea(width,height) {let area=width*height; return area;}
-console.log (getRectangleArea(width,height));
+/* width=6;
+height=7; */
+function getRectangleArea(width, height) {
+  const area = width * height;
+  return area;
+}
+/* console.log (getRectangleArea(width,height)); */
 
 /**
  * Returns a circumference of circle given by radius.
@@ -34,11 +37,11 @@ console.log (getRectangleArea(width,height));
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(radius) {return 2*Math.PI*radius;}
-let radius=6;
-console.log(getCircleCircumference(radius));
-
-/**
+function getCircleCircumference(radius) {
+  return 2 * Math.PI * radius;
+}
+/* const radius = 6;
+console.log(getCircleCircumference(radius)) */ /**
  * Returns an average of two given numbers.
  *
  * @param {number} value1
@@ -51,9 +54,11 @@ console.log(getCircleCircumference(radius));
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  return ((value1+value2)/2);} 
-  let value1=12; let value2=13;
-  console.log (getAverage(value1,value2));
+  return (value1 + value2) / 2;
+}
+/* const value1 = 12;
+const value2 = 13;
+console.log(getAverage(value1, value2))/*;
 
 /**
  * Returns a distance between two points by cartesian coordinates.
@@ -71,14 +76,13 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-  return(Math.sqrt((x2 - x1)**2+(y2 - y1)**2));}
-  let x1=-5;
-  let y1=0;
-  let x2=10;
-  let y2=-10;
-  console.log(getDistanceBetweenPoints(x1, y1, x2, y2));
-
-/**
+  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+}
+/* const x1 = -5;
+const y1 = 0;
+const x2 = 10;
+const y2 = -10;
+console.log(getDistanceBetweenPoints(x1, y1, x2, y2)) */ /**
  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
  *
  * @param {number} a
@@ -91,11 +95,12 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  return(x=-b/a);
+  const x = -b / a;
+  return x;
 }
-let a=5
-let b=(-15)
-console.log (getLinearEquationRoot(a,b))
+/* const a = 5;
+const b = -15;
+console.log(getLinearEquationRoot(a, b)) */
 
 /**
  * Returns an angle (in radians) between two vectors given by xi and yi,
@@ -114,8 +119,8 @@ console.log (getLinearEquationRoot(a,b))
  *   (0,-1) (1,0)    => π/2
  *   (0,1) (0,1)     => 0
  */
-function getAngleBetweenVectors(x1, y1, x2, y2) {
-  return('Not implemented');
+function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
+  return 'Not implemented';
 }
 
 /**
