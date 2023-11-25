@@ -91,10 +91,10 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  return(Math.sqrt(a*x+b=0));
+  return(x=-b/a);
 }
 let a=5
-let b=(-10)
+let b=(-15)
 console.log (getLinearEquationRoot(a,b))
 
 /**
@@ -114,8 +114,8 @@ console.log (getLinearEquationRoot(a,b))
  *   (0,-1) (1,0)    => π/2
  *   (0,1) (0,1)     => 0
  */
-function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getAngleBetweenVectors(x1, y1, x2, y2) {
+  return('Not implemented');
 }
 
 /**
